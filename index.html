@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <p>Sum of Arguments</p>
+    <p id="result"></p>
+    <script>
+        function sum() {
+                var sum = 0;
+                for (var i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            sum(1, 2); // returns 3
+            sum(1, 2, 3); // returns 6
+        document.getElementById("result").innerHTML =  sum(10, 20, 30);
+    </script>
+</body>
+
+</html>
